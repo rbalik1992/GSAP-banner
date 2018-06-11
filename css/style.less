@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'Volvo Broad';
+  src: url('../font/VolvoBroad.eot?#iefix') format('embedded-opentype'),
+  url('../font/VolvoBroad.woff') format('woff'),
+  url('../font/VolvoBroad.ttf') format('truetype'), url('../font/VolvoBroad.svg#VolvoBroad') format('svg');
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'VolvoSans';
+  src: url('../font/VolvoSansRegular.eot?#iefix') format('embedded-opentype'), url('../font/VolvoSansRegular.woff') format('woff'), url('../font/VolvoSansRegular.ttf') format('truetype'), url('../font/VolvoSansRegular.svg#VolvoSansRegular') format('svg');
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'VolvoSansMedium';
+  src: url('../font/VolvoSansMedium.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'VolvoSansMedium';
+  src: url('../font/VolvoSansMedium.woff') format('woff'), url('../font/VolvoSansMedium.ttf') format('truetype'), url('../font/VolvoSansMedium.svg#VolvoSansMedium') format('svg');
+  font-weight: normal;
+  font-style: normal
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  q:lang(de) {
+    quotes: "\201E" "\201C"
+  }
+  .folder {
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+    background: url('../image/back.png'), #000;
+    height: 90px;
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 10px 0;
+    transform: scale(0.5);
+    transition: all ease .5s;
+    z-index: 1;
+    &:hover {
+      transform: scale(1)
+    }
+  }
+  .folder_base {
+    .bord {
+      width: 50%;
+      float: right;
+      border-left: 1px solid #fff;
+      padding-left: 30px;
+      box-sizing: border-box;
+      height: 100%;
+      .block-text {
+        position: absolute;
+        p {
+          color: #fff;
+          font-size: 32px;
+          margin: 0;
+          width: 65%;
+          height: 70px;
+          font-family: "Volvo Broad"
+        }
+      }
+      .block-text2 {
+        position: absolute;
+        top: 25%;
+        p {
+          color: #fff;
+          font-size: 18px;
+          margin: 0;
+          top: 20%;
+          font-family: 'VolvoSans';
+          display: block;
+          position: relative;
+          &:last-child {
+            font-weight: bold
+          }
+        }
+      }
+      .orange-block {
+        border: 2px solid #eb7400;
+        background: #fff;
+        color: #eb7400;
+        width: 100%;
+        .orange-text1 {
+          margin: 0;
+          font-size: 13px;
+          width: 100%;
+          font-family: 'VolvoSansMedium' !important;
+          padding-top: 1px;
+          padding-left: 4px;
+          padding-bottom: 1px
+        }
+        .xxx {
+          width: 100%;
+          background: url("../image/orange-block.png") no-repeat;
+          position: relative;
+          height: 18px;
+          padding-top: 1px;
+          padding-bottom: 1px;
+          p {
+            margin: 0;
+            font-family: 'VolvoSansMedium';
+            &:first-child {
+              width: 26.333333%;
+              background: #fff;
+              color: #eb7400;
+              font-size: 8px;
+              text-align: center;
+              font-family: 'VolvoSansMedium';
+              bottom: 38%;
+              position: absolute
+            }
+            &:nth-child(2) {
+              color: #ffffff !important;
+              font-size: 20px;
+              position: absolute;
+              bottom: -12%;
+              font-family: 'VolvoSansMedium';
+              left: 32%
+            }
+            &:last-child {
+              color: #ffffff !important;
+              font-family: 'VolvoSansMedium';
+              font-size: 8px;
+              position: absolute;
+              right: 0;
+              margin-right: 14px
+            }
+          }
+        }
+      }
+      .block-text3 {
+        position: absolute;
+        top: 20%;
+        .orange-text2 {
+          font-size: 10px;
+          margin: 2px 12px 2px 0;
+          text-align: right;
+          font-family: 'VolvoSansRegular'
+        }
+      }
+      .block-text4 {
+        position: absolute;
+        top: 25%;
+        .orange-block {
+          height: 30px !important;
+          .xxx {
+            border-right: 2px solid #eb7400 !important
+          }
+        }
+      }
+      .block-text5 {
+        position: absolute;
+        top: 20%;
+        width: 30%;
+        ul {
+          float: left;
+          margin: 0;
+          position: relative;
+          top: 14%;
+          line-height: 18px;
+          padding-left: 20px;
+          li {
+            list-style: none;
+            color: #fff;
+            font-size: 14px;
+            font-family: 'VolvoSans';
+            font-weight: bold
+          }
+        }
+        .white-block {
+          width: 30%;
+          background: #fff;
+          position: relative;
+          float: left;
+          top: 12%;
+          padding: 10px;
+          text-align: center;
+          p {
+            margin: 0;
+            font-size: 14px;
+            color: #000;
+            font-family: 'VolvoSansMedium';
+            letter-spacing: 2px
+          }
+        }
+      }
+    }
+    .abb {
+      color: #ccc;
+      font-size: 12px;
+      font-family: 'VolvoSans';
+      position: absolute;
+      bottom: 7px;
+      left: 7px;
+      margin: 0
+    }
+    .remove {
+      border: 0;
+      width: 30px;
+      z-index: 10;
+      cursor: pointer;
+      outline: 0;
+      background: url("../image/remove.png") no-repeat;
+      height: 30px;
+      position: absolute;
+      top: 7px;
+      left: 7px
+    }
+  }
+}
